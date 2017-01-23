@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle No" />
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Contact" />
+    <EditText
+    android:id="@+id/start_time"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/contact"
+    android:hint="Start Time" />
+
+    <EditText
+        android:id="@+id/availability"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_time"
+        android:hint="Availability" />
+
+    <EditText
+        android:id="@+id/source"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availability"
+        android:hint="Source" />
+
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/source"
+        android:hint="Destination" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/destination">
+
+        <TextView android:id="@+id/TVtest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Madhapur Karachi Bakery"/>
+
+
+        <RadioButton android:id="@+id/Madhapur1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Madhapur Karachi Bakery"
+            android:onClick="Madhapur2"/>
+        <RadioButton android:id="@+id/radio_ninjas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cyber Tower"
+            android:onClick="onRadioButtonClicked"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
